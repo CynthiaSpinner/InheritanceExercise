@@ -7,22 +7,32 @@ namespace Inheritance
         static void Main(string[] args)
         {
             // TODO Be sure to follow best practice when creating your classes
+            var blueBird = new Bird()
+            {
+                BeakSize = "1 inch",
+                WingSpan = 5,
+                Height = 5,
+                Color = "blue",
+               
+            };
 
-            // Create a class Animal
-            // give this class 4 members that all Animals have in common
+            var igwana = new Reptile()
+            {
+                HasClaws = true,
+                HasScales = true,
+                Weight = 10,
+                ColdBlooded = "Yes",
+                Legs = 4,
+                BodySize = "Medium",
+                MaleOrFemale = "Female",
+                Age = 5
+            };
 
-
-            // Create a class Bird
-            // give this class 4 members that are specific to Bird
-            // Set this class to inherit from your Animal Class
-
-            // Create a class Reptile
-            // give this class 4 members that are specific to Reptile
-            // Set this class to inherit from your Animal Class
-
-
-
-
+            blueBird.Details();
+            Console.WriteLine();
+            Console.WriteLine("--------------");
+            Console.WriteLine();
+            igwana.Details();
             /*Create an object of your Bird class
              *  give values to your members using the object of your Bird class
              *  
